@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ayça'nın Hikayesi</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root { --main-pink: #f8bbd0; --dark-pink: #e91e63; --text-color: #4a4a4a; }
+
+        body { margin: 0; padding: 0; min-height: 100vh; background: #fdfbfb; font-family: 'Montserrat', sans-serif; color: var(--text-color); overflow: hidden; }
+
+        
+
+        .page {
+
+            display: none; height: 100vh; width: 100vw; flex-direction: column;
+
+            justify-content: center; align-items: center; text-align: center;
+
+            padding: 20px; box-sizing: border-box; animation: fadeIn 1s ease;
+
+        }
+
+
+
+        .active { display: flex; }
+
+
+
+        h1 { font-family: 'Dancing Script', cursive; color: var(--dark-pink); font-size: 2.5rem; margin-bottom: 15px; }
+
+        p { line-height: 1.8; max-width: 450px; font-size: 1.1rem; }
+
+        .poem { font-style: italic; color: #555; border-left: 3px solid var(--main-pink); padding-left: 15px; text-align: left; }
+
+
+
+        .btn {
+
+            margin-top: 30px; padding: 12px 35px; background: var(--dark-pink);
+
+            color: white; border: none; border-radius: 25px; cursor: pointer;
+
+            font-size: 1rem; font-weight: bold; transition: all 0.3s ease;
+
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+
+        }
+
+        .btn:hover { transform: scale(1.05); background: #c2185b; }
+
+
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div id="p1" class="page active">
+
+        <h1>Hoş geldin SEVGİLİM</h1>
+
+        <p>Kargonun içindeki bu küçük sürpriz, aslında çok daha büyük bir hikayenin parçası.</p>
+
+        <button class="btn" onclick="nextPage('p2')">Yolculuğa Başla</button>
+
+    </div>
+
+
+
+    <div id="p2" class="page">
+
+    <h1>Küçük Bir Hatırlatma</h1>
+
+    
+
+    <div class="memory-box">
+
+        <span class="heart-bg">❤</span>
+
+        <div class="pixel-art">
+
+            ✨<br>
+
+                Zamanın ötesinde,<br>
+
+                Ruhun izinde...
+
+            </div>
+
+        </div>
+
+
+
+        <p style="font-style: italic; border-bottom: 1px solid var(--main-pink); padding-bottom: 10px; margin-bottom: 15px;">
+
+            "Bazı başlangıçlar toprağa değil, doğrudan ruha ekilir; ne mevsim tanır ne de mesafe..."
+
+        </p>
+
+    
+
+        <p>Gözden ırak olanın gönle daha yakın olduğunu senden öğrendim. Yan yana değilken bile içimde büyüttüğüm bu sevda, şimdi hayatımın en sarsılmaz gerçeği haline geldi.</p>
+
+    
+
+        <button class="btn" onclick="nextPage('p3')">Devam Et</button>
+
+    </div>
+
+
+
+    <div id="p3" class="page">
+
+        <h1>Bir Düşünür Der ki...</h1>
+
+        <p><i>"Aşk, ruhun kendi yansımasını bir başkasında bulmasıdır."</i></p>
+
+        <p>Socrates'in dediği gibi; ben ruhumun en güzel yansımasını sende buldum.</p>
+
+        <button class="btn" onclick="nextPage('p4')">Sana Bir Şiirim Var...</button>
+
+    </div>
+
+
+
+    <div id="p4" class="page">
+
+        <h1>Ruhumun Yansıması</h1>
+
+        <div class="poem">
+
+            <p>Varlığın, en karmaşık denklemlerin çözümü gibi,<br>
+
+            Ruhumun en ıssız köşesine sızan bir ışık.<br>
+
+            Kilometreler yorgun, yollar çaresiz, zaman eski;<br>
+
+            Ama kalbim hâlâ o ilk günkü gibi sana aşık.</p>
+
+        </div>
+
+        <button class="btn" onclick="nextPage('p5')">Devam Et...</button>
+
+    </div>
+
+
+
+    <div id="p5" class="page">
+
+        <h1>Sarsılmaz Bir Vaat</h1>
+
+        <div class="poem">
+
+            <p>Örs başında dövülen sıcak demir gibidir sevdam,<br>
+
+            Ateşte pişmiş, çelikleşmiş, sarsılmaz bir inatla.<br>
+
+            Belki şu an uzaktayım, belki eksik bu dünyam,<br>
+
+            Ama her zerrem seninle, en kutsal bir vaatle.</p>
+
+        </div>
+
+        <button class="btn" onclick="nextPage('p6')">Bitmedi...</button>
+
+    </div>
+
+
+
+    <div id="p6" class="page">
+
+        <h1>Bizim Hikayemiz</h1>
+
+        <p>Biliyorum, bazen yan yana olmamak zor. Ama kurduğumuz her hayal, yazdığımız her kod ve attığımız her adım bizi birbirimize daha da yaklaştırıyor.</p>
+
+        <p>Seninle yaşlanmak, sadece bir dilek değil; benim en büyük planım.</p>
+
+        <button class="btn" onclick="nextPage('p7')">Sözüme Gelince...</button>
+
+    </div>
+
+
+
+    <div id="p7" class="page">
+
+        <h1>Sarsılmaz Bir Karar</h1>
+
+        <p>Hayat bazen serttir, ama senin sevgin benim sığınağım. Sana sadece bugünü değil, her sabah uyandığımda seni seveceğime dair sözü veriyorum.</p>
+
+        <p style="font-size: 2rem;">✨</p>
+
+        <button class="btn" onclick="nextPage('p8')">Ve Artık Asıl Sürpriz...</button>
+
+    </div>
+
+
+
+    <div id="p8" class="page">
+
+        <h1>Ve Bu Sözün Nişanesi...</h1>
+
+        <div style="font-size: 60px;">🎁</div>
+
+        <p>Bu kutu senin için fiziksel bir hediye olabilir ama benim için sana verdiğim bir sözdür.</p>
+
+        <p><b>Henüz o büyük teklif değil ama, o güne giden yolun ilk adımı...</b></p>
+
+        <div style="font-size: 40px; margin-top: 10px;">💍</div>
+
+        <p>Seni çok seviyorum.</p>
+
+        <p style="font-size: 0.8rem; color: #999;">Fatih & Ayça</p>
+
+    </div>
+
+
+
+    <script>
+
+        function nextPage(pageId) {
+
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+
+            document.getElementById(pageId).classList.add('active');
+
+        }
+
+    </script>
+
+</body>
+
+</html>
